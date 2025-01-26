@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Akka.Persistence.Query" />
-    <PackageReference Include="Akka.Streams" />
+<!--    <PackageReference Include="Akka.Persistence.Query" />-->
+<!--    <PackageReference Include="Akka.Streams" />-->
     <PackageReference Include="LanguageExt.Core" />
     <PackageReference Include="linq2db" />
     <PackageReference Include="Microsoft.Bcl.HashCode" />
@@ -17,5 +17,10 @@
   <ItemGroup>
     <EmbeddedResource Include="persistence.conf" CopyToOutputDirectory="Always" />
     <EmbeddedResource Include="snapshot.conf" CopyToOutputDirectory="Always" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\akkanet\src\core\Akka.Persistence.Query\Akka.Persistence.Query.csproj" />
+    <ProjectReference Include="..\..\..\akkanet\src\core\Akka.Streams\Akka.Streams.csproj" />
   </ItemGroup>
 </Project>

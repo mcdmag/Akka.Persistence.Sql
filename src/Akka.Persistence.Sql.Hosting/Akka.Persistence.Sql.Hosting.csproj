@@ -4,11 +4,12 @@
       <TargetFrameworks>$(NetStandardLibVersion);$(NetLibVersion)</TargetFrameworks>
     </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Akka.Persistence.Hosting" />
-    </ItemGroup>
+<!--    <ItemGroup>-->
+<!--        <PackageReference Include="Akka.Persistence.Hosting" />-->
+<!--    </ItemGroup>-->
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\akkanethosting\src\Akka.Persistence.Hosting\Akka.Persistence.Hosting.csproj" />
       <ProjectReference Include="..\Akka.Persistence.Sql\Akka.Persistence.Sql.csproj" />
     </ItemGroup>
 </Project>
